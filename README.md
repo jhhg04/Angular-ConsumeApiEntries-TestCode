@@ -1,4 +1,4 @@
-# Cosume Api
+# Consume Api
 
 ##  https://api.publicapis.org/entries?category=games
 
