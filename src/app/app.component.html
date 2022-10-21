@@ -5,9 +5,13 @@
 </nav>
 <div class="container mt-3">
   <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
-    <ngb-panel title="{{ ent.API }}" *ngFor="let ent of entry">
+    <ngb-panel
+      title=" {{ i + 1 }} | {{ ent.API }} "
+      *ngFor="let ent of entry; let i = index"
+    >
       <ng-template ngbPanelContent>
         <ul>
+          <li>{{ i + 1 }}</li>
           <li>{{ ent.Description }}</li>
           <li>{{ ent.Auth }}</li>
           <li>{{ ent.HTTPS }}</li>
